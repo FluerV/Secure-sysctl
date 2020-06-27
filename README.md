@@ -14,6 +14,7 @@
 #Uncomment the next two lines to enable Spoof protection (reverse-path filter)
 #Turn on Source Address Verification in all interfaces to
 #prevent some spoofing attacks
+
 net.ipv4.conf.lo.rp_filter=1
 net.ipv4.conf.all.rp_filter=1
 net.ipv4.conf.default.rp_filter=1
@@ -22,14 +23,12 @@ net.ipv4.conf.default.rp_filter=1
 #See http://lwn.net/Articles/277146/
 #Note: This may impact IPv6 TCP sessions too
 #net.ipv4.tcp_syncookies=1
-#
 #Enable ignoring broadcast request
 
 net.ipv4.icmp_echo_ignore_broadcasts = 1
 #net.ipv6.icmp_echo_ignore_broadcasts = 1
 #
 #Enable bad error message Protection 
-
 #net.ipv4.icmp_ignore_bogus_error_responses = 1
 #
 #Uncomment the next line to enable packet forwarding for IPv4
@@ -96,13 +95,11 @@ net.ipv4.conf.default.shared_media = 0
 #kernel.sysrq=0
 
 To save changes run: 
-
 sysctl -p
 
 Reboot!
 
 Check if your modification exist:
-
 sysctl -a | grep your interface
 
 
@@ -111,17 +108,17 @@ Explanation
 0 - disable option
 1 - enable option
 
-1. Ignoring broadcast request.
+1.Ignoring broadcast request.
 
 If your host is spoofed, attacker can send large ammounts of ICMP broadcast messages to other hosts. All hosts receiving this message will
 start to reply  to your compromised address. It can significantly reduce the speed of internet connection and increase traffic.
 Your computer can freeze and start working very slowly. 
 
-2. Disable packet forwarding
+2.Disable packet forwarding
 
 If your computer are not a router (gateway) between LAN nodes and your ISP you should skip forwarding. 
 
-3. Disable ICMP redirects
+3.Disable ICMP redirects
 
 
 
