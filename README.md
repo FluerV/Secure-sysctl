@@ -136,6 +136,7 @@ After making changes in grub run
 Explanation
 
 0 - disable option
+
 1 - enable option
 #
 1.Ignoring broadcast request.
