@@ -106,6 +106,7 @@ net.ipv4.conf.default.shared_media = 0
 #net.ipv6.conf.all.shared_media = 0
 #
 #Log Martian Packets
+
 #net.ipv4.conf.all.log_martians = 1
 #
 #Magic system request Key
@@ -114,31 +115,39 @@ net.ipv4.conf.default.shared_media = 0
 #for what other values do
 #kernel.sysrq=0
 
-
+#
 To save changes run: 
 sysctl -p
 
 Reboot!
 
 Check if your modification exist:
-sysctl -a | grep your interface
 
+#sysctl -a | grep your interface
+#
+Disable IPv6 in grub:
 
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash ipv6.disable=1"
+
+After making changes in grub run 
+
+#update-grub
+#
 Explanation
 
 0 - disable option
 1 - enable option
-
+#
 1.Ignoring broadcast request.
 
 If your host is spoofed, attacker can send large ammounts of ICMP broadcast messages to other hosts. All hosts receiving this message will
 start to reply  to your compromised address. It can significantly reduce the speed of internet connection and increase traffic.
 Your computer can freeze and start working very slowly. 
-
+#
 2.Disable packet forwarding
 
 If your computer are not a router (gateway) between LAN nodes and your ISP you should skip forwarding. 
-
+#
 3.Disable ICMP redirects
 
 
