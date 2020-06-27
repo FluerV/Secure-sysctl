@@ -4,14 +4,10 @@
 #/etc/sysctl.conf - Configuration file for setting system variables
 #See /etc/sysctl.d/ for additional system variables.
 #See sysctl.conf (5) for information.
-#
 #kernel.domainname = example.com
-#
 #Uncomment the following to stop low-level messages on console
 #kernel.printk = 3 4 1 3
-#
 #Functions previously found in netbase
-#
 #Uncomment the next two lines to enable Spoof protection (reverse-path filter)
 #Turn on Source Address Verification in all interfaces to
 #prevent some spoofing attacks
@@ -26,12 +22,12 @@ net.ipv4.conf.default.rp_filter=1
 #See http://lwn.net/Articles/277146/
 #Note: This may impact IPv6 TCP sessions too
 #net.ipv4.tcp_syncookies=1
-#
 #Enable ignoring broadcast request
 
 net.ipv4.icmp_echo_ignore_broadcasts = 1
 
 #net.ipv6.icmp_echo_ignore_broadcasts = 1
+
 #
 #Enable bad error message Protection   
 #net.ipv4.icmp_ignore_bogus_error_responses = 1
@@ -41,10 +37,15 @@ net.ipv4.icmp_echo_ignore_broadcasts = 1
 #based on Router Advertisements for this host
 
 net.ipv4.conf.all.forwarding=0
+
 net.ipv4.conf.default.forwarding=0
+
 #net.ipv6.conf.all.forwarding=0
+
 net.ipv4.conf.all.mc_forwarding=0
+
 net.ipv4.conf.default.mc_forwarding=0
+
 #net.ipv6.conf.all.mc_forwarding=0
 #
 ###################################################################
@@ -57,36 +58,51 @@ net.ipv4.conf.default.mc_forwarding=0
 #Do not accept ICMP redirects (prevent MITM attacks)
 
 net.ipv4.conf.lo.accept_redirects = 0
+
 net.ipv4.conf.all.accept_redirects = 0
+
 #net.ipv6.conf.all.accept_redirects = 0
+
 net.ipv4.conf.default.accept_redirects = 0
-#
+
 #_or_
 #Accept ICMP redirects only for gateways listed in our default
 #gateway list (enabled by default)
 
 net.ipv4.conf.lo.secure_redirects = 0
+
 net.ipv4.conf.all.secure_redirects = 0
+
 net.ipv4.conf.default.secure_redirects = 0
+
 #net.ipv6.conf.all.secure_redirects = 0
 #
 #Do not send ICMP redirects (we are not a router)
 
 net.ipv4.conf.lo.send_redirects = 0
+
 net.ipv4.conf.all.send_redirects = 0
+
 net.ipv4.conf.default.send_redirects = 0
+
 #net.ipv6.conf.all.send_redirects = 0
 #
 #Do not accept IP source route packets (we are not a router)
 
 net.ipv4.conf.lo.accept_source_route = 0
+
 net.ipv4.conf.all.accept_source_route = 0
+
 net.ipv4.conf.default.accept_source_route = 0
+
 #net.ipv6.conf.all.accept_source_route = 0
 #
 net.ipv4.conf.lo.shared_media = 0
+
 net.ipv4.conf.all.shared_media = 0
+
 net.ipv4.conf.default.shared_media = 0
+
 #net.ipv6.conf.all.shared_media = 0
 #
 #Log Martian Packets
