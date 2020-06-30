@@ -1,5 +1,13 @@
 # Secure-sysctl
 
+
+#
+# /etc/sysctl.conf - Configuration file for setting system variables
+# See /etc/sysctl.d/ for additonal system variables
+# See sysctl.conf (5) for information.
+#
+
+
 #
 #/etc/sysctl.conf - Configuration file for setting system variables
 #See /etc/sysctl.d/ for additional system variables.
