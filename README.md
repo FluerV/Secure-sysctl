@@ -1,14 +1,15 @@
-# Secure sysctl 
 
-1. To save changes run: 
-sysctl -p
+# To save changes run: 
 
-2. Reboot!
+#sysctl -p
 
-3. Check if your modification exist (with su):
+# Reboot!
+
+# Check if your modification exist (with su):
+
 #sysctl -a | grep your interface
 
-Explanation
+# Explanation
 
 0 - disable option; 1 - enable option
 
