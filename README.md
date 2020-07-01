@@ -15,7 +15,7 @@ III. Check if your modification exist (with su):
 0 - disable option; 
 1 - enable option
 ```
-#### Ignoring broadcast request.
+#### Ignoring broadcast request
 If your host is spoofed, attacker can send large ammounts of ICMP broadcast messages to other hosts. All hosts receiving this message will
 start to reply  to your compromised address. It can significantly reduce the speed of internet connection and increase traffic.
 Your computer can freeze and start working very slowly. 
