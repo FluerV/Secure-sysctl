@@ -1,7 +1,10 @@
 ## Secure sysctl.conf
 #### To save changes run: 
 
-```#sysctl -p```
+```
+
+#sysctl -p
+```
 
 
 #### Reboot!
