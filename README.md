@@ -1,4 +1,3 @@
->
 ## Secure sysctl.conf
 #### To save changes run: 
 
@@ -12,21 +11,18 @@
 
 #sysctl -a | grep your interface
 ```
->
+####Explanation
 
+```
 
-                                                                     Explanation
-
-0 - disable option; 1 - enable option
-
-                                                              Ignoring broadcast request.
-
+0 - disable option; 
+1 - enable option
+```
+#### Ignoring broadcast request.
 If your host is spoofed, attacker can send large ammounts of ICMP broadcast messages to other hosts. All hosts receiving this message will
 start to reply  to your compromised address. It can significantly reduce the speed of internet connection and increase traffic.
 Your computer can freeze and start working very slowly. 
-
-                                                               Disable packet forwarding
-
+#### Disable packet forwarding
 If your computer are not a router (gateway) between LAN nodes and your ISP you should skip forwarding. 
 
                                                           Turn on Source Address Verification
