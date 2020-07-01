@@ -1,17 +1,21 @@
 
-# To save changes run: 
+To save changes run: 
+
 
 #sysctl -p
 
-# Reboot!
+Reboot!
 
-# Check if your modification exist (with su):
+Check if your modification exist (with su):
 
 #sysctl -a | grep your interface
 
-# Explanation
 
-0 - disable option; 1 - enable option
+Explanation
+
+0 - disable option; 
+
+1 - enable option
 
 1. Ignoring broadcast request.
 
