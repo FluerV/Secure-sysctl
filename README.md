@@ -39,7 +39,7 @@ Source routing is a technique whereby the sender of a packet can specify the rou
 As a packet travels through the network, each router will examine the destination IP address and choose the next hop to forward the packet to. 
 In source routing, the "source" (i.e., the sender) makes some or all of these decisions.
 
-    Reason for disabling:
+    Reason for disabling
 Attackers can use source routing to probe the network by forcing packets into specific parts of the network. Using source routing, an attacker can collect information about a network's topology, or other information that could be useful in performing an attack. 
 During an attack, an attacker could use source routing to direct packets to bypass existing security restrictions.
 #### Disable shared media
