@@ -1,5 +1,5 @@
 ## Secure sysctl.conf
-
+> Note! You need include in sysctl.conf ALL interfaces you have!
 I. To save changes run: 
 ```
 #sysctl -p
