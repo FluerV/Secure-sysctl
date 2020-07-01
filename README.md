@@ -1,3 +1,4 @@
+>
 ## Secure sysctl.conf
 #### To save changes run: 
 
@@ -5,14 +6,13 @@
 
 #sysctl -p
 ```
-
-
 #### Reboot!
-
-
 #### Check if your modification exist (with su):
+```
 
 #sysctl -a | grep your interface
+```
+>
 
 
                                                                      Explanation
